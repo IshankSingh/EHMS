@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PatientDetail">
+
+        <ImageView
+            android:id="@+id/patient_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/john"
+            android:contentDescription="@string/john"/>
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_information"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Name:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Age:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Gender:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="DOB:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Email:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Phone:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="16dp"
+                android:text="Address:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/patient_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:paddingRight="16dp"
+                android:text="johnsmith23@gmail.com"
+                android:textSize="18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_information"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prescription"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/patient_prescription_present"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/patient_prescription_old"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicines"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/patient_medicine_present"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/patient_medicine_old"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointments"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/patient_appointment"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allergies:"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/patient_allergy"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chronic"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/patient_chronic"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bills"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/patient_bills"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:backgroundTintMode="src_atop"
+    android:backgroundTint="#6000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="18sp"
+        android:hint="search"
+        android:drawablePadding="16dp"
+        android:paddingLeft="8dp"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:imeOptions="actionSend"
+        android:drawableEnd="@drawable/icon_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/patient_search_msg_TV"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/patient_id"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
